@@ -5,7 +5,7 @@
   <groupId>jpuexia</groupId>
   <artifactId>helloworldmvc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>helloworldmvc</name>
   <url>http://maven.apache.org</url>
@@ -21,5 +21,16 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>5.1.39</version>
+    </dependency>
   </dependencies>
+  <modules>
+  	<module>controller</module>
+  	<module>model</module>
+  	<module>view</module>
+  	<module>contract</module>
+  </modules>
 </project>
